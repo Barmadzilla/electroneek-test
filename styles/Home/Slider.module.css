@@ -1,0 +1,32 @@
+.content {
+  padding-top: 3em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.info {
+  padding-right: 2em;
+}
+.img {
+  position: relative;
+  align-self: stretch;
+}
+.arrow {
+  --size: 5em;
+  height: var(--size);
+  width: var(--size);
+}
+.arrows{
+    margin-top: 6em;
+    display: flex;
+    gap: 1em;
+}
+.arrow.right {
+  background: url("/icons/arrow_slider.svg") no-repeat center / cover;
+}
+.arrow.left {
+  transform: rotate(180deg);
+  background: url("/icons/arrow_slider.svg") no-repeat center / cover;
+}
+.content p{
+line-height: 2;
+}

@@ -1,0 +1,101 @@
+.card {
+  background: white;
+  border-radius: 5px;
+  /* height: calc(var(--header-shift) * 2); */
+  overflow: hidden;
+  box-shadow: 0px 30px 120px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  position: relative;
+  align-self: stretch;
+}
+.card:hover {
+  box-shadow: 0px 30px 120px rgba(0, 0, 0, 0.45);
+  z-index: 2;
+}
+.card.short {
+  display: flex;
+  align-items: center;
+}
+.imgContainer {
+  height: var(--header-shift);
+  position: relative;
+}
+.card p {
+  padding: 1.6em 2em;
+  line-height: 1.7;
+}
+.card.short p {
+  margin: 0;
+  padding: 1.6em 4em 1.6em 2em;
+}
+.card .arrow {
+  --size: 2em;
+  height: var(--size);
+  width: var(--size);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+}
+.card .arrow.green {
+  background-image: url("/icons/arrow_d_green.svg");
+}
+.card.action:hover .arrow.green {
+  background-image: url("/icons/arrow_d_white.svg");
+}
+.card .arrow.purple {
+  background-image: url("/icons/arrow_d_purple.svg");
+}
+.card .arrow.yellow {
+  background-image: url("/icons/arrow_d_yellow.svg");
+}
+.card .arrow.up {
+  top: 1em;
+  transform: rotate(-90deg);
+}
+.card.action p {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  color: var(--c-main-blue);
+}
+.card.action {
+  padding: 3em 2em;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+}
+.card.action p::before {
+  margin-bottom: -0.35em;
+  content: "";
+  height: 1.8em;
+  width: 2.5em;
+  display: inline-block;
+}
+.card.action p.read::before {
+  background: url("/icons/message-edit.svg") no-repeat left center / contain;
+}
+.card.action:hover p.read::before {
+  background: url("/icons/message-edit-w.svg") no-repeat left center / contain;
+}
+.card.action p.bot::before {
+  background: url("/icons/bot.svg") no-repeat left center / contain;
+}
+.card.action:hover p.bot::before {
+  background: url("/icons/bot-w.svg") no-repeat left center / contain;
+}
+.card.action p.tv::before {
+  background: url("/icons/tv.svg") no-repeat left center / contain;
+}
+.card.action:hover p.tv::before {
+  background: url("/icons/tv-w.svg") no-repeat left center / contain;
+}
+.card.action:hover {
+  background: var(--c-main-green);
+}
+.card.action:hover p{
+  color: white;
+}

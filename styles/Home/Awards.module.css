@@ -1,0 +1,32 @@
+.awards{
+    /* background: var(--c-header-bg); */
+    --p:5em;
+    --banner-shift:3.1em;
+    margin-top: var(--p);
+    padding-top: var(--p);
+    padding-bottom: calc(var(--p) + var(--banner-shift));
+    margin-bottom: calc(var(--banner-shift) * -1);
+    background:  url('/images/bg_el.svg') right  bottom 300%  no-repeat,  url('/images/bg_el_left.png') left 0 top 300%  no-repeat;
+    background-color: var(--c-header-bg);
+    
+}
+.awards .grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2em;
+}
+.award{
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    --size: 160px;
+    height: var(--size);
+    width: var(--size);
+    transition: all 200ms;
+}
+.award:hover{
+    background: rgba(255, 255, 255, 0.1);
+}

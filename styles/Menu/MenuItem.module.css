@@ -1,0 +1,11 @@
+.item {
+  font-size: 12px;
+  font-weight: 400;
+
+  color: white;
+  text-transform: uppercase;
+  transition: all 20ms;
+}
+.item:hover{
+  color: var(--c-main-green);
+}

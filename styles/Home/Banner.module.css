@@ -1,0 +1,30 @@
+.logos{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+.info{
+    display: inline-block;
+    max-width: 50%;
+}
+.banner{
+    --p:8em;
+    --banner-shift:3.1em;
+    margin-top: var(--p);
+    background: var(--c-header-bg) url("/images/banner_bg.jpg") center no-repeat / cover;
+    padding-top: var(--p);
+    padding-bottom: calc(var(--p) + var(--banner-shift));
+    margin-bottom: calc(var(--banner-shift) * -1);
+}
+.banner .content{
+    display: flex;
+    justify-content:flex-end;
+}
+.banner p, .banner h2{
+    color: white
+}
+.banner p{
+    line-height: 1.8;
+    margin-bottom: 3em;
+}

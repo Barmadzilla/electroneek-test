@@ -1,0 +1,15 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: flex-start;
+  grid-gap: 15px;
+}
+
+.bg {
+  background: url("/images/bg_el_green.png") right top 5em no-repeat,
+    url("/images/bg_el_c.png") left 0 center no-repeat;
+}
+.bg2 {
+  background:  url("/images/bg_el_rb.png") right  bottom -20em no-repeat;
+   
+}

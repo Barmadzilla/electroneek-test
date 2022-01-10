@@ -1,0 +1,39 @@
+.menuContainer {
+  display: grid;
+  grid-template-columns: repeat(9, auto);
+  grid-gap: 1.5em;
+  font-size: 12px;
+}
+
+.menuContainer ul {
+  padding: 0;
+  margin: 0;
+}
+.menuContainer ul li {
+  list-style: none;
+  margin-bottom: 1.3em;
+}
+.menuContainer strong {
+  margin-bottom: 1.5em;
+  display: inline-block;
+}
+.sub,
+.copyright,
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+.sub {
+  padding-top: 3em;
+}
+.social {
+  gap: 0.5em;
+}
+.copyright {
+  gap: 3em;
+  font-size: 12px;
+  line-height: 2;
+}
+.menuContainer a:hover {
+    color: var(--c-main-green);
+}

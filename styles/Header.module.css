@@ -1,0 +1,10 @@
+.logos{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+.info{
+    display: inline-block;
+    max-width: 50%;
+}

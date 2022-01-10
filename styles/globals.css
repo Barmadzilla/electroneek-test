@@ -1,9 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&family=Zen+Antique&display=swap");
+
+:root {
+--c-main-green: #00AA5D;
+--c-main-blue: #151B30;
+--с-violet:#5E3BC3;
+--c-yellow:#F2994A;
+--c-light-blue:#6472A0;
+--c-light-green:#EEFAF5;
+--c-light-grey:#F7F8FB;
+--c-header-bg:#151B30;
+
+
+}
+
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
 
 a {
@@ -13,4 +29,30 @@ a {
 
 * {
   box-sizing: border-box;
+}
+h1,h2,h3,h4,h5{
+  font-weight: 400;
+}
+h1 {
+  font-size: 50px;
+  
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 20px;
+}
+
+strong{
+  font-weight: 800;
+}
+p{
+  margin: 0 0 1em;
+}Î
+p:last-child{
+  margin-bottom: 0;
 }

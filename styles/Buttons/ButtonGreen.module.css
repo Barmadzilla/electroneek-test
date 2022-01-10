@@ -1,0 +1,15 @@
+.button{
+    background: var(--c-main-green);
+    color: white;
+    border-radius: 5px;
+    font-weight: 800;
+    padding: 1.9em 3.1em;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: all 200ms;
+    white-space: nowrap;
+}
+
+.button:hover{
+    background: #008D4D;
+}
